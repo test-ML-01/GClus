@@ -37,9 +37,9 @@ These networks provide established ground truths or meaningful community divisio
 
 - **Les Misérables**  
   This dataset is derived from the character co-occurrence network in Victor Hugo’s Les Mis´erables. With 77 nodes and 254 edges, the graph offers a 
-unique environment due to its literary origin. Unlike the previous datasets, Les Mis´erables is sourced through the Python NetworkX package, and it 
-does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed 
-network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
+  unique environment due to its literary origin. Unlike the previous datasets, Les Mis´erables is sourced through the Python NetworkX package, and it 
+  does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed 
+  network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
 
 ### Synthetic Networks
 
@@ -67,7 +67,7 @@ To monitor execution times and memory usage, we incorporated profiling tools (e.
 
 ## C) Cluster Structures
 
-In Figure 2 we show the cluster structures obtained by the two algorithms on the real-world networks (Table 1).
+In the figure we show the cluster structures obtained by the two algorithms on the real-world networks (Table 1).
 ---
 
 ## D) Execution Time and Memory Usage
@@ -83,7 +83,4 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
 especially when the application’s priority is on achieving balanced, size-constrained clusters
 
 ---
-
-
-
 
