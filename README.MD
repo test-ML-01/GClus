@@ -62,7 +62,7 @@ Synthetic benchmarks were generated with explicit size restrictions to test the 
 
 All experiments were conducted on a dedicated workstation to ensure reproducibility and accurate performance evaluations. The hardware configuration consisted of an Intel Core i7-10510 CPU with 8 physical cores clocked at up to 4.9 GHz, 12 GB of DDR4 RAM, and a 1 TB NVMe solid-state drive. For software, we used Python 3.12 as the primary programming language, taking advantage of its extensive ecosystem for numerical computing and network analysis. The experimental framework was set up within a Conda environment (version 24.9.1) to ensure dependency management and reproducibility. Key Python libraries included NetworkX for graph manipulation, NumPy for efficient numerical computations, and SciPy for optimization routines. The algorithmic implementations, such as the community extraction, refinement, and balancing modules of Gclus, were thoroughly tested using this environment, ensuring consistent performance across multiple runs.
 
-To monitor execution times and memory usage, we incorporated profiling tools (e.g., Python’s built-in time module and `memory_profiler` into our evaluation pipeline. Execution times were measured in milliseconds, and memory consumption was tracked in kilobytes throughout the application’s runtime. This enabled us to capture detailed performance metrics under various experimental configurations.
+To monitor execution times and memory usage, we incorporated profiling tools (e.g., Python’s built-in time module and `memory_profiler` into our evaluation pipeline). Execution times were measured in milliseconds, and memory consumption was tracked in kilobytes throughout the application’s runtime. This enabled us to capture detailed performance metrics under various experimental configurations.
 ---
 
 ## C) Cluster Structures
@@ -83,4 +83,5 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
 especially when the application’s priority is on achieving balanced, size-constrained clusters
 
 ---
+
 
