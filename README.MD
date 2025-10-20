@@ -117,15 +117,13 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="images/Time.pdf" alt="Execution time (ms) comparison between GClus and SMKNN" width="95%"><br>
+      <img src="images/Time-1.png" alt="Execution time (ms) comparison between GClus and SMKNN" width="95%"><br>
       <sub><b>Fig. 3a.</b> Execution time (ms).</sub>
     </td>
     <td align="center" width="50%">
-      <img src="images/Memory.pdf" alt="Memory (KB) comparison between GClus and SMKNN" width="95%"><br>
+      <img src="images/Memory-1.png" alt="Memory (KB) comparison between GClus and SMKNN" width="95%"><br>
       <sub><b>Fig. 3b.</b> Memory (KB).</sub>
     </td>
   </tr>
 </table>
-
-<sub>Comparison of execution time and memory consumption between GClus and SMKNN.</sub>
 
