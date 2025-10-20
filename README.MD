@@ -66,7 +66,38 @@ This enabled us to capture detailed performance metrics under various experiment
 
 ## C) Cluster Structures
 
-In the figure we show the cluster structures obtained by the two algorithms on the real-world networks (Table 1).
+In the figures below we show the cluster structures obtained by the two algorithms (GClus and SMKNN) on the real-world networks (Table 1).
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="images/KarateGCLUS.png" alt="(a) Karate - GClus" width="95%"><br>
+      <sub>(a) Karate – GClus</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/DolphinsGCLUS.png" alt="(b) Dolphins - GClus" width="95%"><br>
+      <sub>(b) Dolphins – GClus</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/PolbooksGCLUS.png" alt="(c) Polbooks - GClus" width="95%"><br>
+      <sub>(c) Polbooks – GClus</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="images/KarateSMKNN.png" alt="(d) Karate - SMKNN" width="95%"><br>
+      <sub>(d) Karate – SMKNN</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/DolphinsSMKNN.png" alt="(e) Dolphins - SMKNN" width="95%"><br>
+      <sub>(e) Dolphins – SMKNN</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="images/PolbooksSMKNN.png" alt="(f) Polbooks - SMKNN" width="95%"><br>
+      <sub>(f) Polbooks – SMKNN</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -82,3 +113,4 @@ In datasets like Compound, Five Cluster, or Spiral, GClus’s iterative balancin
 The memory overhead in these cases also increases, as GClus must maintain extra intermediate structures during the split-and-merge process; however, this increase is generally linear with the graph size and acceptable given the added benefit of strict size conformity.  
 
 Overall, while GClus demonstrates slightly higher computational demands on complex synthetic instances, its runtime and memory footprint remain competitive—especially when the application’s priority is on achieving balanced, size-constrained clusters.
+
