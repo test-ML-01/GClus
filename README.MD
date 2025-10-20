@@ -1,4 +1,4 @@
-# GClus: Enforcing Explicit Size Constraints in Graph Clustering through Structural Refinement
+  # GClus: Enforcing Explicit Size Constraints in Graph Clustering through Structural Refinement
 
 ## Overview
 
@@ -62,7 +62,8 @@ Synthetic benchmarks were generated with explicit size restrictions to test the 
 
 All experiments were conducted on a dedicated workstation to ensure reproducibility and accurate performance evaluations. The hardware configuration consisted of an Intel Core i7-10510 CPU with 8 physical cores clocked at up to 4.9 GHz, 12 GB of DDR4 RAM, and a 1 TB NVMe solid-state drive. For software, we used Python 3.12 as the primary programming language, taking advantage of its extensive ecosystem for numerical computing and network analysis. The experimental framework was set up within a Conda environment (version 24.9.1) to ensure dependency management and reproducibility. Key Python libraries included NetworkX for graph manipulation, NumPy for efficient numerical computations, and SciPy for optimization routines. The algorithmic implementations, such as the community extraction, refinement, and balancing modules of Gclus, were thoroughly tested using this environment, ensuring consistent performance across multiple runs.
 
-To monitor execution times and memory usage, we incorporated profiling tools (e.g., Python’s built-in time module and `memory_profiler` into our evaluation pipeline). Execution times were measured in milliseconds, and memory consumption was tracked in kilobytes throughout the application’s runtime. This enabled us to capture detailed performance metrics under various experimental configurations.
+To monitor execution times and memory usage, we incorporated profiling tools (e.g., Python’s built-in time module and `memory_profiler`) into our evaluation pipeline. 
+Execution times were measured in milliseconds, and memory consumption was tracked in kilobytes throughout the application’s runtime. This enabled us to capture detailed performance metrics under various experimental configurations.
 ---
 
 ## C) Cluster Structures
@@ -72,16 +73,12 @@ In the figure we show the cluster structures obtained by the two algorithms on t
 
 ## D) Execution Time and Memory Usage
 
-For the real-world datasets (see Table2 and Figure 3), our experiments reveal that GClus ’s additional operations—such as iterative split-and-merge refinement and node adjustment—introduce a modest overhead in both execution time and 
-memory usage compared to SMKNN. For example, on the Karate and Dolphins networks, while the overall runtime difference is within a few milliseconds (e.g., GClus takes roughly 24–27ms as opposed to SMKNN’s 16–25 ms), GClus tends to
-use slightly less or comparable memory due to its targeted local adjustments that prevent unnecessary global computations. In larger and more complex instances such as Polbooks and Les Mis´erables, even though GClus ’s iterative refinement
-phase increases its overall runtime and memory consumption (with execution times differing by roughly 10–30ms and memory usage showing similar moderate increases), the cost remains in a competitive range with SMKNN.
-For synthetic datasets, where graphs are typically larger or exhibit more challenging community structures, the computational impact of enforcing size constraints becomes more pronounced. In datasets like Compound, Five Cluster, or
-Spiral, GClus ’s iterative balancing requires additional passes that can roughly double the execution time compared to SMKNN. The memory overhead in these cases also increases, as GClus must maintain extra intermediate structures during the 
-split-and-merge process; however, this increase is generally linear with the graph size and acceptable given the added benefit of strict size conformity.
-Overall, while GClus demonstrates slightly higher computational demands on complex synthetic instances, its runtime and memory footprint remain competitive, 
-especially when the application’s priority is on achieving balanced, size-constrained clusters
+For the real-world datasets (see Table2 and Figure 3), our experiments reveal that GClus ’s additional operations—such as iterative split-and-merge refinement and node adjustment—introduce a modest overhead in both execution time and memory usage compared to SMKNN. For example, on the Karate and Dolphins networks, while the overall runtime difference is within a few milliseconds (e.g., GClus takes roughly 24–27ms as opposed to SMKNN’s 16–25 ms), GClus tends to use slightly less or comparable memory due to its targeted local adjustments that prevent unnecessary global computations. In larger and more complex instances such as Polbooks and Les Mis´erables, even though GClus ’s iterative refinement phase increases its overall runtime and memory consumption (with execution times differing by roughly 10–30ms and memory usage showing similar moderate increases), the cost remains in a competitive range with SMKNN.
+For synthetic datasets, where graphs are typically larger or exhibit more challenging community structures, the computational impact of enforcing size constraints becomes more pronounced. 
+In datasets like Compound, Five Cluster, orSpiral, GClus ’s iterative balancing requires additional passes that can roughly double the execution time compared to SMKNN. The memory overhead in these cases also increases, as GClus must maintain extra intermediate structures during the split-and-merge process; however, this increase is generally linear with the graph size and acceptable given the added benefit of strict size conformity.
+Overall, while GClus demonstrates slightly higher computational demands on complex synthetic instances, its runtime and memory footprint remain competitive, especially when the application’s priority is on achieving balanced, size-constrained clusters
 
 ---
+
 
 
