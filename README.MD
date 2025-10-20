@@ -114,3 +114,18 @@ The memory overhead in these cases also increases, as GClus must maintain extra 
 
 Overall, while GClus demonstrates slightly higher computational demands on complex synthetic instances, its runtime and memory footprint remain competitive—especially when the application’s priority is on achieving balanced, size-constrained clusters.
 
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="images/Time.pdf" alt="Execution time (ms) comparison between GClus and SMKNN" width="95%"><br>
+      <sub><b>Fig. 3a.</b> Execution time (ms).</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="images/Memory.pdf" alt="Memory (KB) comparison between GClus and SMKNN" width="95%"><br>
+      <sub><b>Fig. 3b.</b> Memory (KB).</sub>
+    </td>
+  </tr>
+</table>
+
+<sub>Comparison of execution time and memory consumption between GClus and SMKNN.</sub>
+
