@@ -13,24 +13,24 @@ It combines structural metrics (k-truss, clique density, and conductance) with i
 
 ## A) Datasets
 
-To evaluate GClus, we employ a diverse collection of graph benchmarks. For real-world data, we consider well-known networks such as Dolphins, Karate, Polbooks, and Les Misérables.  
+To evaluate GClus, we employ a diverse collection of graph benchmarks. For real-world data, we consider well-known networks such as Dolphins<sup>28</sup>, Karate<sup>40</sup>, Polbooks<sup>33</sup>, and Les Misérables<sup>7</sup>.  
 These networks provide established ground truths or meaningful community divisions that are commonly used for clustering evaluation:
 
 ### Real-World Networks
 
 - **Dolphins**  
-  Originally introduced by Lusseau et al. (2003), the Dolphins network captures the association patterns among 62 bottlenose dolphins.  
+  Originally introduced by Lusseau et al. <sup>28</sup>, the Dolphins network captures the association patterns among 62 bottlenose dolphins.  
   Comprising 159 undirected edges, this network exemplifies a social system with moderate sparsity and clearly defined subgroups. The ground truth for this dataset (typically representing two communities) provides an established benchmark for evaluating clustering performance in terms of both adherence to size constraints and community cohesiveness.
 
 - **Karate Club**  
-  The Karate club network, first documented by Zachary, models the social interactions among 34 members of a karate club. With 78 edges connecting the nodes, this dataset is renowned for its distinct bifurcation into two communities. Despite its relatively small size, the Karate network poses a significant challenge due to the presence of overlapping attributes and varied interaction strengths, making it an ideal candidate for testing the precision and stability of size-constrained clustering approaches.
+  The Karate club network, first documented by Zachary<sup>40</sup>, models the social interactions among 34 members of a karate club. With 78 edges connecting the nodes, this dataset is renowned for its distinct bifurcation into two communities. Despite its relatively small size, the Karate network poses a significant challenge due to the presence of overlapping attributes and varied interaction strengths, making it an ideal candidate for testing the precision and stability of size-constrained clustering approaches.
 
 - **Polbooks**  
-  Based on co-purchasing patterns of books on politics, the Polbooks network contains 105 nodes and 441 edges.  
+  Based on co-purchasing patterns of books on politics as described in <sup>33</sup>, the Polbooks network contains 105 nodes and 441 edges.  
   The denser structure and the presence of three naturally occurring communities test the ability of clustering algorithms to balance between high internal connectivity and strict size restrictions. This dataset is particularly useful for understanding how the algorithm scales with increasing edge density and more complex community arrangements.
 
 - **Les Misérables**  
-  This dataset is derived from the character co-occurrence network in Victor Hugo’s *Les Misérables*. With 77 nodes and 254 edges, the graph offers a unique environment due to its literary origin. Unlike the previous datasets, *Les Misérables* is sourced through the Python NetworkX package, and it does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
+  This dataset is derived from the character co-occurrence network in Victor Hugo’s *Les Misérables*<sup>7</sup>. With 77 nodes and 254 edges, the graph offers a unique environment due to its literary origin. Unlike the previous datasets, *Les Misérables* is sourced through the Python NetworkX package, and it does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
 
 ### Synthetic Networks
 
@@ -66,7 +66,7 @@ This enabled us to capture detailed performance metrics under various experiment
 
 ## C) Cluster Structures
 
-In the figures below we show the cluster structures obtained by the two algorithms (GClus and SMKNN) on the real-world networks (Table 1).
+In Figure 2 we show the cluster structures obtained by the two algorithms (GClus and SMKNN) on the real-world networks (Table 1).
 
 <div align="center">
   <img src="images/structures.png" 
@@ -103,6 +103,7 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
     </td>
   </tr>
 </table>
+
 
 
 
