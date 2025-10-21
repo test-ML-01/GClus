@@ -105,9 +105,19 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
 </table>
 
 ---
-<sup>28.</sup> Dolphins: Lusseau, D., Schneider, K., Boisseau, O.J., Haase, P., Slooten, E., Dawson, S.M.: 
+<sup>28.</sup> **Dolphins:** Lusseau, D., Schneider, K., Boisseau, O.J., Haase, P., Slooten, E., Dawson, S.M.: 
 The bottlenose dolphin community of doubtful sound features a large proportion of long-lasting associations: can geographic isolation explain this unique trait?
 Behavioral Ecology and Sociobiology 54, 396–405 (2003)
+
+<sup>40.</sup> **Karate:** Zachary, W.W.: An information flow model for conflict and fission in small groups.
+Journal of anthropological research 33(4), 452–473 (1977)
+
+<sup>33.</sup> **Polbooks:** Newman, M.E.: Modularity and community structure in networks. 
+Proceedings ofthe national academy of sciences 103(23), 8577–8582 (2006)
+
+<sup>33.</sup> **Les Misérables:** Cardel´us, J., Serrano, J., Mateo, J.: gsbm: Generalized Stochastic Block Model for Network Data (2023), 
+https://cran.r-project.org/web/packages/gsbm/vignettes/les miserables.html, 
+r package version 0.1.0
 
 
 
