@@ -104,6 +104,10 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
   </tr>
 </table>
 
+---
+<sup>28.</sup> Dolphins: Lusseau, D., Schneider, K., Boisseau, O.J., Haase, P., Slooten, E., Dawson, S.M.: 
+The bottlenose dolphin community of doubtful sound features a large proportion of long-lasting associations: can geographic isolation explain this unique trait?
+Behavioral Ecology and Sociobiology 54, 396–405 (2003)
 
 
 
