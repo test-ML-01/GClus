@@ -70,46 +70,35 @@ In the figures below we show the cluster structures obtained by the two algorith
 
 <table bgcolor="#ffffff" style="border-collapse: collapse; width: 100%;">
   <tr>
-    <td align="center" width="33%" bgcolor="#ffffff" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/KarateGCLUS.png" alt="(a) Karate - GClus" width="95%"><br>
+    <td align="center"  background-color= white width="33%" bgcolor="#ffffff" style="background-color: white; padding: 5px;">
+        <img src="images/KarateGCLUS.png" alt="(a) Karate - GClus" width="200" height="200"><br>
         <sub>(a) Karate – GClus</sub>
-      </div>
     </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/DolphinsGCLUS.png" alt="(b) Dolphins - GClus" width="95%"><br>
+    <td bgcolor="#ffffff"  background-color= white align="center" width="33%" style="background-color: white; padding: 5px;">
+        <img src="images/DolphinsGCLUS.png" alt="(b) Dolphins - GClus"width="200" height="200"><br>
         <sub>(b) Dolphins – GClus</sub>
-      </div>
     </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/PolbooksGCLUS.png" alt="(c) Polbooks - GClus" width="95%"><br>
+    <td bgcolor="#ffffff"  background-color= white align="center" width="33%" style="background-color: white; padding: 5px;">
+        <img src="images/PolbooksGCLUS.png" alt="(c) Polbooks - GClus" width="200" height="200"><br>
         <sub>(c) Polbooks – GClus</sub>
-      </div>
     </td>
   </tr>
   <tr>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/KarateSMKNN.png" alt="(d) Karate - SMKNN" width="95%"><br>
+    <td bgcolor="#ffffff" background-color= white align="center" width="33%" style="background-color: white; padding: 5px;">
+        <img src="images/KarateSMKNN.png" alt="(d) Karate - SMKNN" width="200" height="200"><br>
         <sub>(d) Karate – SMKNN</sub>
-      </div>
     </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/DolphinsSMKNN.png" alt="(e) Dolphins - SMKNN" width="95%"><br>
+    <td bgcolor="#ffffff"  background-color= white align="center" width="33%" style="background-color: white; padding: 5px;">
+        <img src="images/DolphinsSMKNN.png" alt="(e) Dolphins - SMKNN" width="200" height="200"><br>
         <sub>(e) Dolphins – SMKNN</sub>
-      </div>
     </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-      <div bgcolor="#ffffff" style="background-color: white; display: inline-block; padding: 5px; border-radius: 4px;">
-        <img src="images/PolbooksSMKNN.png" alt="(f) Polbooks - SMKNN" width="95%"><br>
+    <td bgcolor="#ffffff"  background-color= white align="center" width="33%" style="background-color: white; padding: 5px;">
+        <img src="images/PolbooksSMKNN.png" alt="(f) Polbooks - SMKNN" width="200" height="200"><br>
         <sub>(f) Polbooks – SMKNN</sub>
-      </div>
     </td>
   </tr>
 </table>
+
 ---
 
 ## D) Execution Time and Memory Usage
@@ -137,6 +126,7 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
     </td>
   </tr>
 </table>
+
 
 
 
