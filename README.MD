@@ -68,36 +68,13 @@ This enabled us to capture detailed performance metrics under various experiment
 
 In the figures below we show the cluster structures obtained by the two algorithms (GClus and SMKNN) on the real-world networks (Table 1).
 
-<table bgcolor="#ffffff" style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td align="center" width="33%" bgcolor="#ffffff" style="background-color: white; padding: 5px;">
-        <img src="images/KarateGCLUS.png" alt="(a) Karate - GClus" width="95%"><br>
-        <sub>(a) Karate – GClus</sub>
-    </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-        <img src="images/DolphinsGCLUS.png" alt="(b) Dolphins - GClus" width="95%"><br>
-        <sub>(b) Dolphins – GClus</sub>
-    </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-        <img src="images/PolbooksGCLUS.png" alt="(c) Polbooks - GClus" width="95%"><br>
-        <sub>(c) Polbooks – GClus</sub>
-    </td>
-  </tr>
-  <tr>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-        <img src="images/KarateSMKNN.png" alt="(d) Karate - SMKNN" width="95%"><br>
-        <sub>(d) Karate – SMKNN</sub>
-    </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-        <img src="images/DolphinsSMKNN.png" alt="(e) Dolphins - SMKNN" width="95%"><br>
-        <sub>(e) Dolphins – SMKNN</sub>
-    </td>
-    <td bgcolor="#ffffff" align="center" width="33%" style="background-color: white; padding: 5px;">
-        <img src="images/PolbooksSMKNN.png" alt="(f) Polbooks - SMKNN" width="95%"><br>
-        <sub>(f) Polbooks – SMKNN</sub>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="images/structures.png" 
+       alt="Fig. 2: Comparison of Nodes Grouped by the Clustering Algorithms GClus (first row) and SMKNN (second row) for Karate, Dolphins, and Polbooks graphs." 
+       width="95%">
+  <br>
+  <sub><b>Fig. 2.</b> Comparison of nodes grouped by the clustering algorithms GClus (first row) and SMKNN (second row) for Karate, Dolphins, and Polbooks graphs.</sub>
+</div>
 
 ---
 
@@ -118,14 +95,15 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
   <tr>
     <td align="center" width="50%">
       <img src="images/Time-1.png" alt="Execution time (ms) comparison between GClus and SMKNN" width="95%"><br>
-      <sub><b>Fig. a.</b> Execution time (ms).</sub>
+      <sub><b>Fig. 3a.</b> Execution time (ms).</sub>
     </td>
     <td align="center" width="50%">
       <img src="images/Memory-1.png" alt="Memory (KB) comparison between GClus and SMKNN" width="95%"><br>
-      <sub><b>Fig. b.</b> Memory (KB).</sub>
+      <sub><b>Fig. 3b.</b> Memory (KB).</sub>
     </td>
   </tr>
 </table>
+
 
 
 
