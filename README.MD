@@ -13,24 +13,24 @@ It combines structural metrics (k-truss, clique density, and conductance) with i
 
 ## A) Datasets
 
-To evaluate GClus, we employ a diverse collection of graph benchmarks. For real-world data, we consider well-known networks such as Dolphins<sup>28</sup>, Karate<sup>40</sup>, Polbooks<sup>33</sup>, and Les Misérables<sup>7</sup>.  
+To evaluate GClus, we employ a diverse collection of graph benchmarks. For real-world data, we consider well-known networks such as Dolphins<sup>1</sup>, Karate<sup>2</sup>, Polbooks<sup>3</sup>, and Les Misérables<sup>4</sup>.  
 These networks provide established ground truths or meaningful community divisions that are commonly used for clustering evaluation:
 
 ### Real-World Networks
 
 - **Dolphins**  
-  Originally introduced by Lusseau et al. <sup>28</sup>, the Dolphins network captures the association patterns among 62 bottlenose dolphins.  
+  Originally introduced by Lusseau et al. <sup>1</sup>, the Dolphins network captures the association patterns among 62 bottlenose dolphins.  
   Comprising 159 undirected edges, this network exemplifies a social system with moderate sparsity and clearly defined subgroups. The ground truth for this dataset (typically representing two communities) provides an established benchmark for evaluating clustering performance in terms of both adherence to size constraints and community cohesiveness.
 
 - **Karate Club**  
-  The Karate club network, first documented by Zachary<sup>40</sup>, models the social interactions among 34 members of a karate club. With 78 edges connecting the nodes, this dataset is renowned for its distinct bifurcation into two communities. Despite its relatively small size, the Karate network poses a significant challenge due to the presence of overlapping attributes and varied interaction strengths, making it an ideal candidate for testing the precision and stability of size-constrained clustering approaches.
+  The Karate club network, first documented by Zachary<sup>2</sup>, models the social interactions among 34 members of a karate club. With 78 edges connecting the nodes, this dataset is renowned for its distinct bifurcation into two communities. Despite its relatively small size, the Karate network poses a significant challenge due to the presence of overlapping attributes and varied interaction strengths, making it an ideal candidate for testing the precision and stability of size-constrained clustering approaches.
 
 - **Polbooks**  
-  Based on co-purchasing patterns of books on politics as described in <sup>33</sup>, the Polbooks network contains 105 nodes and 441 edges.  
+  Based on co-purchasing patterns of books on politics as described in <sup>3</sup>, the Polbooks network contains 105 nodes and 441 edges.  
   The denser structure and the presence of three naturally occurring communities test the ability of clustering algorithms to balance between high internal connectivity and strict size restrictions. This dataset is particularly useful for understanding how the algorithm scales with increasing edge density and more complex community arrangements.
 
 - **Les Misérables**  
-  This dataset is derived from the character co-occurrence network in Victor Hugo’s *Les Misérables*<sup>7</sup>. With 77 nodes and 254 edges, the graph offers a unique environment due to its literary origin. Unlike the previous datasets, *Les Misérables* is sourced through the Python NetworkX package, and it does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
+  This dataset is derived from the character co-occurrence network in Victor Hugo’s *Les Misérables*<sup>4</sup>. With 77 nodes and 254 edges, the graph offers a unique environment due to its literary origin. Unlike the previous datasets, *Les Misérables* is sourced through the Python NetworkX package, and it does not come with weights or explicit ground truth community labels. This presents a scenario where clustering must be performed on a dynamically constructed network from textual data, challenging the algorithm’s adaptability and robustness in less structured settings.
 
 ### Synthetic Networks
 
@@ -105,19 +105,20 @@ Overall, while GClus demonstrates slightly higher computational demands on compl
 </table>
 
 ---
-<sup>28.</sup> **Dolphins:** Lusseau, D., Schneider, K., Boisseau, O.J., Haase, P., Slooten, E., Dawson, S.M.: 
+<sup>1.</sup> **Dolphins:** Lusseau, D., Schneider, K., Boisseau, O.J., Haase, P., Slooten, E., Dawson, S.M.: 
 The bottlenose dolphin community of doubtful sound features a large proportion of long-lasting associations: can geographic isolation explain this unique trait?
 Behavioral Ecology and Sociobiology 54, 396–405 (2003)
 
-<sup>40.</sup> **Karate:** Zachary, W.W.: An information flow model for conflict and fission in small groups.
+<sup>2.</sup> **Karate:** Zachary, W.W.: An information flow model for conflict and fission in small groups.
 Journal of anthropological research 33(4), 452–473 (1977)
 
-<sup>33.</sup> **Polbooks:** Newman, M.E.: Modularity and community structure in networks. 
+<sup>3.</sup> **Polbooks:** Newman, M.E.: Modularity and community structure in networks. 
 Proceedings ofthe national academy of sciences 103(23), 8577–8582 (2006)
 
-<sup>33.</sup> **Les Misérables:** Cardel´us, J., Serrano, J., Mateo, J.: gsbm: Generalized Stochastic Block Model for Network Data (2023), 
+<sup>4.</sup> **Les Misérables:** Cardel´us, J., Serrano, J., Mateo, J.: gsbm: Generalized Stochastic Block Model for Network Data (2023), 
 https://cran.r-project.org/web/packages/gsbm/vignettes/les miserables.html, 
 r package version 0.1.0
+
 
 
 
