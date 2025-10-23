@@ -62,6 +62,40 @@ To monitor execution times and memory usage, we incorporated profiling tools (e.
 Execution times were measured in milliseconds, and memory consumption was tracked in kilobytes throughout the application’s runtime.  
 This enabled us to capture detailed performance metrics under various experimental configurations.
 
+In order to replicate the experimental environment and reproduce the results, the following setup procedure is provided. It details the required dependencies, installation steps, and testing commands used during the evaluation process.
+
+## _**Dependencies**_  
+Libraries: networkx, matplotlib, scikit-learn, pymetis, pyvis.  
+
+## _**Installation**_  
+1. Install [Miniconda3](https://docs.anaconda.com/miniconda/). During installation, check the option to add conda to the PATH; installation for Windows systems.  
+2. Install Miniconda3 for Linux systems using the following commands:  
+   ```sh
+   apt update -y
+   apt upgrade -y
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   bash Miniconda3-latest-Linux-x86_64.sh
+   source ~/miniconda3/bin/activate
+   conda init
+   ```
+3. Verify the correct installation of Miniconda3.  
+   ```sh
+   conda --version
+   ```
+4. Open the terminal in the project's root folder and run the following commands:  
+   ```sh
+   pip install networkx
+   pip install matplotlib
+   pip install scikit-learn
+   pip install pyvis
+   conda update conda
+   conda install conda-forge::pymetis
+   ```
+## _**Algorithm Testing**_  
+1. From the root folder, the clustering algorithm can be tested on both Windows and Linux systems using:  
+   ```sh
+   python test.py
+   ```
 ---
 
 ## C) Cluster Structures
@@ -118,6 +152,7 @@ Proceedings ofthe national academy of sciences 103(23), 8577–8582 (2006)
 <sup>4.</sup> **Les Misérables:** Cardel´us, J., Serrano, J., Mateo, J.: gsbm: Generalized Stochastic Block Model for Network Data (2023), 
 https://cran.r-project.org/web/packages/gsbm/vignettes/les miserables.html, 
 r package version 0.1.0
+
 
 
 
